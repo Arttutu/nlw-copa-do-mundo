@@ -6,14 +6,33 @@
   padding: 0;
   box-sizing: border-box; /* mantém o tamanho da caixa não importando o padding */
 }
+:root {
+  --card-title-border-color: #746615;
+  --card-primary: #f7dd43;
+  --card-bg-color: #1d1c19;
+  --bg-background: url("assets/bg-yellow.svg");
+}
 ul {
   list-style: none;
 }
+body.blue {
+  --card-title-border-color: #33baf3;
+  --card-primary: #33baf3;
+  --card-bg-color: #202024;
+  --bg-background: url("assets/bg-blue.svg");
+}
+body.green {
+  --card-title-border-color: #047c3f;
+  --card-primary: #047c3f;
+  --card-bg-color: #1a1f1b;
+  --bg-background: url("assets/bg-green.svg");
+}
 body {
   background-color: #121214;
-  background-image: url(assets/bg.svg);
-  background-position-y: 55%;
-  background-position-x: center;
+  background-image: var(--bg-background);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 body * {
   font-family: var(--font);
@@ -21,17 +40,23 @@ body * {
 #app {
   width: fit-content; /*fit-content encaixa o conteudo na caixa */
   margin: 52px auto;
+  padding-top: 52px;
 }
 header {
   margin-bottom: 63px;
+  text-align: center;
 }
-
+#cards {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
 .card {
   padding: 32px 23px;
   text-align: center;
-  background: #1d1c19;
+  background: var(--card-bg-color);
   border-radius: 6px;
-  border-bottom: 2px solid #f7dd43;
+  border-bottom: 2px solid var(--card-primary);
 }
 .card h2 {
   display: flex;
@@ -39,7 +64,7 @@ header {
   align-items: center;
   justify-content: center;
   padding: 8px 16px;
-  border: 1px solid #746615;
+  border: 1px solid var(--card-title-border-color);
   border-radius: 6px;
   width: fit-content;
   margin-inline: auto;
@@ -72,4 +97,36 @@ header {
   font-size: 36px;
   line-height: 126%;
   color: #e1e1e6;
+}
+.card h2:hover,
+.card ul li strong:hover,
+.card ul li img:hover {
+  transform: scale(1.1);
+}
+.card h2,
+.card ul li strong,
+.card ul li img {
+  transition: transform 0.3s;
+}
+.card {
+  animation: appear 3s;
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media (min-width: 700px) {
+  #cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 670px;
+    overflow: hidden;
+  }
 }
