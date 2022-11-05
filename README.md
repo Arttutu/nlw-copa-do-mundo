@@ -21,8 +21,9 @@ O calendário da Copa é um projeto que mostra os jogos da copa do mundo de 2022
 ## Layout
 
 Você pode visualizar o layout do projeto
-através [DESSE LINK] (https://www.figma.com/file/W1sEht0H182KYDcbsoNjje/Calend%C3%A1rio-de-Jogos-(Community)?node-id=301%3A1812)
+através [DESSE LINK](<https://www.figma.com/file/W1sEht0H182KYDcbsoNjje/Calend%C3%A1rio-de-Jogos-(Community)?node-id=301%3A1812>)
 
 ## link
 
-- Site ()
+- [Site](arttutu.github.io/nlw-copa-do-mundo/)
+- [Meu-Portfólio](https://arttutu.github.io/meu_portfolio/)
