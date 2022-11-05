@@ -25,5 +25,5 @@ através [DESSE LINK](<https://www.figma.com/file/W1sEht0H182KYDcbsoNjje/Calend%
 
 ## link
 
-- [Site](arttutu.github.io/nlw-copa-do-mundo/)
-- [Meu-Portfólio](https://arttutu.github.io/meu_portfolio/)
+- [Site do Projeto](https://arttutu.github.io/meu_portfolio/)
+- Meu Portfólio [AQUI](https://arttutu.github.io/meu_portfolio/)
