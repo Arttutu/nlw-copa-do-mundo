@@ -98,6 +98,12 @@ header {
   line-height: 126%;
   color: #e1e1e6;
 }
+.card ul li span {
+  color: #e1e1e6;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 126%;
+}
 .card h2:hover,
 .card ul li strong:hover,
 .card ul li img:hover {
