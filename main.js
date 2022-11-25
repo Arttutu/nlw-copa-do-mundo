@@ -5,7 +5,7 @@ function creatGame(player1, player2, hour, gol1, gol2) {
         <strong>${hour}</strong>
         <img src="./assets/icon-${player2}.svg" alt="Bandeira da ${player2}">
       </li>
-      <ul>
+      <ul class ="gols">
         <li>
           <span> ${gol1} </span>
           <span> x </span>
@@ -33,6 +33,6 @@ document.querySelector("#cards").innerHTML =
   creatCard(
     "28/11",
     "segunda",
-    creatGame("brazil", "switzerland", "13:00", 2, 1)
+    creatGame("brazil", "switzerland", "13:00", 0, 0)
   ) +
-  creatCard("02/12", "sexta", creatGame("brazil", "cameroon", "16:00", 4, 0))
+  creatCard("02/12", "sexta", creatGame("brazil", "cameroon", "16:00", 0, 0))
